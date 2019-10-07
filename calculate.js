@@ -4,7 +4,8 @@ function calculate(num1, num2, enteredOp) {
   
   const convertedNum1 = Number(num1);
   const convertedNum2 = Number(num2);
-  const operation = enteredOp.toLowerCase();
+  const operat = enteredOp.toLowerCase();
+  const operation = operat.replace(' ', '')
 
   if(operation === '+' || operation === 'plus' || operation.substring(0,3)==='add' ){
     return convertedNum1 + convertedNum2;
@@ -26,7 +27,6 @@ else {
 }
   } 
 
-  3 multiplied by 5
 
 
 module.exports = calculate;
